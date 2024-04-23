@@ -4,6 +4,7 @@ import java.text.DecimalFormat;
 import java.util.Random;
 
 import javax.swing.JOptionPane;
+import javax.swing.JTextArea;
 
 public class ExercicioAlunos {
 //	Uma turma com N alunos realizou M provas. 
@@ -34,9 +35,9 @@ public class ExercicioAlunos {
 			for(int j=0; j<m; j++) {
 				soma += notas[i][j];
 			}
-			ret += nomes[i]+" - "+df.format(soma/m)+"\n";
+			ret += nomes[i]+"\t"+df.format(soma/m)+"\n";
 		}
 		
-		JOptionPane.showMessageDialog(null, ret);
+		JOptionPane.showMessageDialog(null, new JTextArea(ret));
 	}
 }
