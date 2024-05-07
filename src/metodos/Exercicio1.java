@@ -54,8 +54,11 @@ public class Exercicio1 {
 	}
 
 	private static int lerIdade() {
-		String idade = JOptionPane.showInputDialog("Sexo");
-		return Integer.parseInt(idade);
+		int idade = Integer.parseInt(JOptionPane.showInputDialog("Idade(entre 1 e 100)"));
+		if(idade > 0 && idade <= 100) {
+			return idade;
+		}
+		return lerIdade();
 	}
 
 	private static void cadastra(String[] nomes, int[] idades, String[] sexos, int pos) {
