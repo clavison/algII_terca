@@ -11,6 +11,9 @@ public class Programa {
 		double[][] notas = new double[20][3];
 		int qtdCadastro = 0;
 		int op = 0;
+			
+		do {
+			op = escolheMenu();
 			if(op==1) cadastrar(nomes, idades, sexos, notas, qtdCadastro++);
 			if(op==2) calculaMediaTodosAlunos(nomes, notas, qtdCadastro);
 			if(op==3) verificaSituacaoTodosAlunos(nomes, notas, qtdCadastro);
@@ -18,8 +21,6 @@ public class Programa {
 			if(op==5) mediaIdades(idades, qtdCadastro);
 			if(op==6) mostraPorSexo(sexos, nomes, qtdCadastro);
 			if(op==7) mostraPorIdade(idades, nomes, qtdCadastro);
-		do {
-			op = escolheMenu();
 		}while(op!=8);
 	}
 	
