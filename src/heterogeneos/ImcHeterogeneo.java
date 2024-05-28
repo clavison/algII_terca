@@ -1,4 +1,4 @@
-package heterogenios;
+package heterogeneos;
 
 import java.text.DecimalFormat;
 

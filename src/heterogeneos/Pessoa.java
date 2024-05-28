@@ -1,4 +1,4 @@
-package heterogenios;
+package heterogeneos;
 
 public class Pessoa {
 	
